@@ -1,0 +1,40 @@
+<container class="main">
+
+<div class="advertising-new">
+<h1>Новое объявление</h1>
+<%= form_for :article, url: articles_path do |f| %>
+    <p>
+        <%= f.label :Автор%><br>
+        <%= f.text_field :author %>
+    </p>
+
+    <p>
+        <%= f.label :Название%><br>
+        <%= f.text_field :title %>
+    </p>
+
+    <p>
+        <%= f.label :Объявление%><br>
+        <%= f.text_field :body %>
+    </p>
+
+    <p>
+        <%= f.label :Активная%><br>
+        <%= f.check_box :status %>
+    </p>
+
+    <p>
+        <%= f.label :Дата %><br>
+        <%= f.date_field :crdate %>
+      </p>
+
+    <p>
+        <%= f.file_field :picture %>
+    </p>
+
+    <p>
+        <%= f.submit %>
+    </p>
+   <% end %>
+</div>
+</container>

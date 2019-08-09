@@ -1,0 +1,53 @@
+<container class="main">
+<div class="advertising">
+    <h1>Доска объявлений</h1>
+<div class="advertising__add">
+    <%= link_to 'Добавить объявление', new_article_path %>
+</div>
+<div class="advertising__wrapper">
+    <% @articles.each do |article| %>
+        <div class="advertising__item">
+        <div class="advertising__img">
+            <%= image_tag article.picture_url.to_s if article.picture? %>
+        </div>
+        <div class="advertising__grid">
+            <div class="advertising__title">
+                <%= article.title %>
+            </div>
+            <div class="advertising__description">
+                <%= article.body %>
+            </div>
+
+            <div class="advertising__author">
+                <span>
+                    Автор:
+                </span>
+                <div>
+                    <%= article.author %>
+                </div>
+            </div>
+
+            <div class="advertising__date">
+                <span>
+                    Дата:
+                </span>
+                <div>
+                  <%= article.crdate %>
+                </div>
+                <div>
+                  <%= article.status %>
+                </div>
+            </div>
+
+            <div class="advertising__info">
+                <div><%= link_to 'Подробнее', article_path(article) %></div>
+                <div><%= link_to 'Удалить', article_path(article),
+                    method: :delete,
+                    data: { confirm: 'Вы уверены?'}%></div>
+            </div>
+        </div>
+        </div>
+    <% end %>
+</div>
+</div>
+</container>

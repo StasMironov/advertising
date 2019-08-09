@@ -1,0 +1,44 @@
+.advertising__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+.advertising__grid {
+  padding: 10px; }
+.advertising__author, .advertising__date {
+  display: flex;
+  margin-bottom: 10px; }
+  .advertising__author div:not(:last-child), .advertising__date div:not(:last-child) {
+    margin-right: 10px; }
+.advertising__info {
+  display: flex; }
+  .advertising__info div:not(:last-child) {
+    margin-right: 10px; }
+.advertising__item {
+  max-width: 300px;
+  transition: .3s;
+  cursor: pointer;
+  margin-right: 13px; }
+  .advertising__item :nth-child(4n) {
+    margin-right: 0px; }
+  .advertising__item:hover {
+    box-shadow: 0 3px 26px 4px rgba(112, 112, 112, 0.49); }
+.advertising__add {
+  margin-bottom: 15px;
+  display: inline-block;
+  border-bottom: 2px solid lightgrey;
+  width: 100%;
+  padding-bottom: 5px; }
+.advertising__img {
+  width: 300px; }
+  .advertising__img img {
+    width: 100%; }
+.advertising__title {
+  margin-bottom: 10px;
+  font-weight: 600; }
+.advertising__description {
+  margin-bottom: 10px; }
+.advertising span {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 10px; }
+
+/*# sourceMappingURL=advertising.css.map */

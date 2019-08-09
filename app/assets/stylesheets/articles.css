@@ -1,0 +1,13 @@
+.main {
+  display: block;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  outline: 4px solid;
+  box-shadow: 1px 6px 10px 5px black;
+  margin-bottom: 30px !important; }
+
+/*# sourceMappingURL=articles.css.map */

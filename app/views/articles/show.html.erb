@@ -1,0 +1,33 @@
+<container class="main">
+<div class="advertising-detail">
+
+<h1>Детальная страница</h1>
+
+<div class="advertising-detail__img">
+    <%= image_tag(@articles.picture.url, alt: 'Image') if @articles.picture? %>
+</div>
+
+<h2>
+    <%= @articles.title %>
+</h2>
+
+<p>
+    <strong>Автор:</strong>
+    <%= @articles.author %>
+</p>
+
+<p>
+    <strong>Объявление:</strong>
+    <%= @articles.body %>
+</p>
+
+<p>
+    <strong>Статус:</strong>
+    <%= @articles.body %>
+</p>
+
+
+<%= link_to 'Назад', articles_path %>
+
+</div>
+</container>
